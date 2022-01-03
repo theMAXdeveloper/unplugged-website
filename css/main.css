@@ -87,7 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  /* -------------------- Base Header / Footer Styles --------------------- */
+  /* -------------------- Base Styles --------------------- */
+
+html {
+  font-size: 16px;
+}
 
 header,
 footer {
@@ -97,6 +101,66 @@ footer {
   flex-flow: row wrap;
 
 }
+
+body {
+  font-family: 'open-sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.125;
+  color: #e2e3ed;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+ul, ol {
+  list-style: none;
+  font-size: 1.125em;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'poppins', sans-serif;
+  font-size: 1.875em;
+  color: #e2e3ed;
+  font-weight: 400;
+}
+
+h3, h4 {
+  font-family: 'poppins', sans-serif;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.875em;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-size: 0.875em;
+  font-style: normal;
+}
+
+.content-wrapper {
+
+}
+
 
   /* --- Header Styles --- */
 
@@ -135,13 +199,10 @@ header nav ul {
   padding: 0;
 }
 
-header nav li {
-  list-style: none;
-}
 
 header nav a {
-  color: #000;
-  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 
@@ -220,6 +281,7 @@ section.features {
 }
 
 .features h2 {
+  max-width: 95%;
   margin: 0;
 }
 
@@ -231,7 +293,7 @@ div.features-items {
 }
 
 .features article {
-  width: 53%;
+  width: 58%;
 }
 
 p.fontawesome-icon {
@@ -240,6 +302,7 @@ p.fontawesome-icon {
 
 p.features-item-description {
   margin: 0;
+  text-align: center;
 }
 
 section.reviews {
@@ -253,6 +316,9 @@ section.reviews {
   margin: 55px 0 45px;
 }
 
+.reviews h2 {
+
+}
 
 .reviews article {
  
@@ -267,12 +333,12 @@ section.reviews {
 }
 
 .reviews h3 {
-  width: 50%;
-  margin: 0 0 25px ;
+  width: 70%;
+  margin: 0;
 }
 
 .reviews p {
-  margin: 0;
+  margin: 25px 0 0;
 }
 
 
@@ -347,8 +413,13 @@ section.faq {
   margin: 50px 0;
 } 
 
+
 .faq h2, h3 {
   margin: 0;
+}
+
+.faq h2 {
+  text-transform: capitalize;
 }
 
 .faq div.faq-content {
@@ -363,7 +434,7 @@ section.faq {
   /* --- Footer Styles --- */
 
 footer {
-
+  color: white;
 }
 
 footer .content-wrapper {
@@ -376,6 +447,7 @@ footer .footer-content {
 }
 
 footer h4 {
+  color: white;
   margin: 0px;
 }
 
