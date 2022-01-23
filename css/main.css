@@ -156,11 +156,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -191,14 +191,20 @@ div.header-divider {
   border-top: 1px solid #e2e3ed;
 }
 
-header a {
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+}
+
+header a {
+
 }
 
 header a img {
-  width: 80%;
+  
 }
 
 header nav {
@@ -359,12 +365,18 @@ section.reviews {
  
 }
 
+.reviews figure {
+  height: 12.5em;
+  background: url("../img/omar-lopez-296944-unsplash.jpg") no-repeat center;
+  background-size: cover;
+}
+
 .reviews article div {
   margin-top: 1em;
 }
 
 .reviews img {
-  margin: 25px 0;
+
 }
 
 .reviews h3 {
@@ -517,6 +529,8 @@ footer .social-icons {
 }
 
 footer .copyright {
+  text-align: center;
+  width: 100%;
   margin: 10px 0 5px;
 }
 
@@ -642,15 +656,15 @@ header .content-wrapper {
   flex-flow: row nowrap;
 }
 
+header figure {
+  width: 35%;
+}
 
 header a {
-  justify-content: left;
-  font-size: 1em;
+
 }
 
 header img {
-  max-width: 50%;
-  margin: 0;
 }
 
 header nav {
@@ -728,6 +742,10 @@ p.fontawesome-icon {
   align-items: center;
 }
 
+.reviews figure {
+  width: 49%;
+}
+
 .reviews h2 {
   width: 80%;
 }
@@ -737,11 +755,19 @@ section.reviews img{
 }
 
 .reviews article div {
+  height: 200px;
   width: 49%;
 }
 
 .reviews article h3 {
   width: 75%;
+}
+
+.reviews p {
+  margin: 0.5em 0;
+  line-height: 1em;
+
+
 }
 
 /***********ABOUT PAGE**********/
@@ -861,13 +887,14 @@ header {
   padding: 25px 0;
 }
 
+header figure {
+  width: 30%;
+}
+
 header nav {
   width: 20%;
 }
 
-header a {
-  font-size: 1.125em;
-}
 
 /*Hero-area*/
 
@@ -934,12 +961,22 @@ p.features-item-description {
   margin: 0 0 90px;
 }
 
+.reviews figure {
+  height: 300px;
+}
+
 .reviews article div {
-  width: 40%;
+  height: 300px;
 }
 
 .reviews article h3 {
+  font-size: 1.875em;
   width: 75%;
+}
+
+.reviews p {
+  margin: 1em 0;
+  line-height: 1.3em;
 }
 
 /***********ABOUT PAGE**********/
