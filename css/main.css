@@ -233,7 +233,7 @@ section.hero-area {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../img/jake-melara-30679-unsplash.jpg") no-repeat fixed center;
+  background: url("../img/jake-melara-30679-unsplash.jpg") center no-repeat #333;
   background-size: cover;
 }
 
