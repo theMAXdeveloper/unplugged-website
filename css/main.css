@@ -112,6 +112,9 @@ body {
 
 .content-wrapper {
   width: 89%;
+  max-width: 450px;
+  min-width: 250px;
+  overflow: hidden;
 }
 
 ul, ol {
@@ -177,6 +180,7 @@ header {
 }
 
 header .content-wrapper {
+  max-width: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -514,6 +518,10 @@ footer .content-wrapper {
 }
 
 footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   text-align: center;
 }
 
@@ -522,8 +530,8 @@ footer h4 {
   margin: 0px;
 }
 
-footer .contact {
-  
+footer .contact, .social {
+  width: 100%;
 }
 
 .contact address {
@@ -536,12 +544,17 @@ footer .social {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;  
   margin: 20px 0 0;
 }
 
-.social-icons a {
+.social-icons p {
+  width: 1em;
+  height: 1em;
+  background: #527158;
+  border: 1em solid #527158;
+  border-radius: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -669,6 +682,7 @@ header {
 }
 
 header .content-wrapper {
+  max-width: 89%;
   width: 100%;
   margin: 0;
   justify-content: space-between;
@@ -865,15 +879,18 @@ footer .content-wrapper {
   width: 100%;
 }
 
+
 footer .footer-content {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-flow: row nowrap;
 }
 
-.footer-content .contact, .social {
+div.footer-content .contact, .social {
   width: 45%;
+}
+
+footer .social-icons {
+  justify-content: space-around;
 }
 
 footer .copyright {
@@ -886,7 +903,7 @@ footer .copyright p {
   margin: 0;
 }
 
-
+}
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
@@ -1048,7 +1065,9 @@ section.faq h3 {
 
 /*Footer*/
 
-
+div.footer-content .contact, .social {
+  width: 30%;
+}
 
 }
 
