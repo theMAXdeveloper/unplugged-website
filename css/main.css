@@ -338,6 +338,13 @@ p.fontawesome-icon {
   margin: 60px 0 35px;
 }
 
+.features i {
+  font-size: 3.75em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 p.features-item-description {
   margin: 0;
   text-align: center;
@@ -739,6 +746,7 @@ aside .form {
 .features h2 {
   max-width: 100%;
 }
+
 
 p.fontawesome-icon {
   margin: 35px 0;
