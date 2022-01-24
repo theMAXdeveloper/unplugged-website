@@ -797,6 +797,12 @@ div.mission-content p {
   width: 45%;
 }
 
+/*Map*/
+
+.map figure {
+  padding-bottom: 45%;
+}
+
 /*Contact*/
 
 section.contact-section .content-wrapper{
@@ -998,6 +1004,12 @@ p.features-item-description {
 
 .mission h2 {
   font-size: 3em;
+}
+
+/*Map*/
+
+.map figure {
+  padding-bottom: 37%;
 }
 
 /*Contact*/
